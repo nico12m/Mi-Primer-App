@@ -13,7 +13,7 @@ function App () {
         <Cards
           characters={characters} />
       </div>
-      <h3>Creada Por: Nicolas Marcelo Mojavik</h3>
+      <h2>Creada Por:<br/> Nicolas Marcelo Mojavik</h2>
     </div>
   )
 }
