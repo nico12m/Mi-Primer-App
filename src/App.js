@@ -18,7 +18,10 @@ function App () {
       }
     })
   };
-const onClose = characters.filter((id)=>characters.id !== id);
+
+  const onClose =(ID)=>{ 
+    setCharacters(characters.filter((characters)=>characters.id !== ID))};
+
   return (
     <div className='App'>
       <div>
