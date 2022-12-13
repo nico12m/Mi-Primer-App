@@ -9,9 +9,9 @@ align-items:flex-end;
 `
 
 export const Cartas =styled.div`
-width:100%;
+
 display:flex;
-flex-direction:center;
+justify-content:center;
 align-items:center;
 `;
 export const Carta =styled.div`
@@ -22,6 +22,7 @@ padding-right:50px; */
 background-color:rgba(237, 238, 243,0.4);
 border:2px solid rgba(237, 238, 243,0.4);
 border-radius:20px;
+flex-direction:center;
 align-items:column;
 `;
 export const Nombre =styled.h2`

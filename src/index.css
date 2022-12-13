@@ -8,8 +8,8 @@ body {
   /* background-image: url("https://fondosmil.com/fondo/27347.jpg"); */
   background-image: url("https://acegif.com/wp-content/uploads/gif/outerspace-58.gif");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 code {
