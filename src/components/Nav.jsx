@@ -9,10 +9,7 @@ export default function Nav (props){
     return(
         <BarraNav>
             <Texto> <Link to="/Home">Home</Link> </Texto>
-           <Texto> <Link to="/About">About</Link></Texto>
-           
-           
-        <BarraNav/>
+            <Texto> <Link to="/About">About</Link></Texto>
             <SearchBar onSearch={props.onSearch}/>
         </BarraNav>
          

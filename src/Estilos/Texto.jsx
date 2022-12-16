@@ -11,4 +11,7 @@ margin:0 15px 0 15px;
 font-family: 'Zen Dots', cursive;
 color:black;
 font-size:2em;
+&:active{
+    text-decoration:none;
+}
 `
