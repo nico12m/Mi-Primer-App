@@ -1,24 +1,23 @@
 import styled from "styled-components";
 
 export const BarraNav = styled.div`
-height:40px;
-background-color:blue;
+background-color:rgba(0, 0, 0, 0.23);
 display:flex;
 flex-direction:column;
-align-items:flex-end;
+align-content:column;
+text-align:column;
+color:white;
 `
 
 export const Cartas =styled.div`
-
 display:flex;
-justify-content:center;
 align-items:center;
+
 `;
 export const Carta =styled.div`
 margin:50px;
-/* padding-top:50px;
-padding-left:50px;
-padding-right:50px; */
+padding:1px;
+width:300px;
 background-color:rgba(237, 238, 243,0.4);
 border:2px solid rgba(237, 238, 243,0.4);
 border-radius:20px;

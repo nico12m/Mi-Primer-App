@@ -14,9 +14,11 @@ export default function SearchBar(props) {
    }
    return (
       <div>
-      <input type='search'name="search" id="" onChange={handleChange} placeholder="Buscar Por ID" />
-      <button onClick={()=>props.onSearch(id)}>Agregar</button>
+      <input type='search' name="search" id="" onChange={handleChange} placeholder="Buscar Por ID" />
+      
+      <button type="submit" onClick={()=>props.onSearch(id)}>Agregar</button>
+
       <button onClick={()=>props.onSearch(numAzar(id))}>Aleatorio</button>
       </div>
-   );
+   )
 }
