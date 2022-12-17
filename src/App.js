@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import About from "./components/About"
 import Detail from "./components/Detail.jsx"
 import Form from './components/form';
+import { Centrado } from './Estilos/centrado';
 // import characters from "./data"
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
@@ -54,14 +55,14 @@ const login =(userdata)=>{
   const onClose =(ID)=>{ 
     setCharacters(characters.filter((characters)=>characters.id !== ID))
   };
-
+  
   return (
     <div className='App'> 
       {location.pathname !=="/"&&<Nav onSearch={onSearch}/>}    
           
       <Routes>
-        <Route path="/" element={<Form login={login}/>}/>
-        <Route path="/Home" element={<Cards characters={characters} onClose={onClose}/>} />    
+        <Route path="/" element={<Centrado><Form login={login}/></Centrado>}/>
+        <Route path="/Home" element={<Cards characters={characters} onClose={onClose}/>} />     
         <Route path="/About" element={<About/>}/>
         <Route path="/detail/:detailId" element={<Detail/>} />
       </Routes> 

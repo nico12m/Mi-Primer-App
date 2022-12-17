@@ -1,6 +1,9 @@
 .App {
    text-align: center;
    margin:0;
-   padding: 1px;
-   
+   padding: 0px;
+   /* position:static;
+   display:flex;
+   align-content: center;
+   justify-content: center; */
 }

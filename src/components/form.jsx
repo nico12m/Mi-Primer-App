@@ -1,9 +1,10 @@
 import {useState} from "react";
 import { Formu } from "../Estilos/formulario";
 
+const regexE =/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 function validate (inputs){
     let errors={} ;
-    if(!inputs.username) errors.username="Rellena el campo";
+    if(!regexE.test(inputs.username)) errors.username="Debe ser un correo";
     if(inputs.username.length>35) errors.username="No puede contener mas de 35 caracteres";
     if(!inputs.password) errors.password="Debes colocar una contraseña";
     if(inputs.password.length<6)errors.password="Debe contener entre 6 y 10 caracteres"
@@ -35,11 +36,11 @@ export default function Form(props){
  }
     return (
         <Formu onSubmit={handleSubmit}>
-            <label htmlFor="">Username</label>
-            <input type="text" value={userdata.username} name="username" onChange={(e)=>handleInputChange(e)}/>
+            <label htmlFor="">Usuario</label>
+            <input type="text" value={userdata.username} name="username" onChange={(e)=>handleInputChange(e)} placeholder="correo"/>
             <p>{errors.username}</p>
-            <label htmlFor="">Password</label>
-            <input type="password" value={userdata.password} name="password" onChange={(e)=>handleInputChange(e)}/>
+            <label htmlFor="">Contraseña</label>
+            <input type="password" value={userdata.password} name="password" onChange={(e)=>handleInputChange(e)} placeholder="Contraseña"/>
             <p>{errors.password}</p>
             <button type="submit">Entrar</button>
         </Formu>
