@@ -15,9 +15,14 @@ color:white;
 `
 
 export const Cartas =styled.div`
-position:center;
+margin:0;
+padding:5px;
+height:auto;
 display:flex;
-align-items:center;
+flex-direction:row;
+flex-wrap:wrap-reverse;
+justify-content:center;
+align-content:center;
 
 `;
 export const Carta =styled.div`
@@ -27,8 +32,6 @@ width:300px;
 background-color:rgba(237, 238, 243,0.4);
 border:2px solid rgba(237, 238, 243,0.4);
 border-radius:20px;
-flex-direction:center;
-align-items:column;
 `;
 export const Nombre =styled.h2`
 width:200px;

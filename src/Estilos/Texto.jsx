@@ -13,3 +13,8 @@ color:black;
 font-size:2em;
 
 `
+export const Label =styled.label`
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Zen+Dots&display=swap");
+font-family: 'Righteous', cursive;
+font-family: 'Zen Dots', cursive;
+font-size:1.2em;`
