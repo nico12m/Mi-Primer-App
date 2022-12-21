@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BarraNav = styled.div`
 margin:0;
-padding:4px;
+padding:2px;
 position:center;
 background-color:rgba(0, 0, 0, 0.23);
 display:flex;

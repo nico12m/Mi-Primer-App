@@ -3,7 +3,6 @@ import SearchBar from "./SearchBar";
 import { BarraNav } from "../Estilos/Cards_estilo";
 import { Linke } from "../Estilos/Links";
 import { Texto } from "../Estilos/Texto";
-import { Link } from "react-router-dom";
 
 export default function Nav (props){
 
