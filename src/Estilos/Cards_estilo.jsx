@@ -19,7 +19,7 @@ margin:0;
 padding:5px;
 height:auto;
 display:flex;
-flex-direction:row;
+flex-direction:row-reverse;
 flex-wrap:wrap-reverse;
 justify-content:center;
 align-content:center;

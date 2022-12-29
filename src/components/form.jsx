@@ -1,6 +1,7 @@
 import {useState} from "react";
 import { Formu } from "../Estilos/formulario";
 import { Label } from "../Estilos/Texto";
+import { InputLogin } from "../Estilos/inputs";
 
 const regexE =/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 function validate (inputs){
@@ -38,10 +39,11 @@ export default function Form(props){
     return (
         <Formu onSubmit={handleSubmit}>
             <Label htmlFor="">Usuario</Label>
-            <input type="text" value={userdata.username} name="username" onChange={(e)=>handleInputChange(e)} placeholder="correo"/>
+            
+            <InputLogin  type="text" value={userdata.username} name="username" onChange={(e)=>handleInputChange(e)} placeholder="correo"/>
             <p>{errors.username}</p>
             <Label htmlFor="">Contraseña</Label>
-            <input type="password" value={userdata.password} name="password" onChange={(e)=>handleInputChange(e)} placeholder="Contraseña"/>
+            <InputLogin type="password" value={userdata.password} name="password" onChange={(e)=>handleInputChange(e)} placeholder="Contraseña"/>
             <p>{errors.password}</p>
             <button type="submit">Entrar</button>
         </Formu>

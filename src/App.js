@@ -38,12 +38,12 @@ const [acceso,setAcceso]=useState(false);
 const login =(userdata)=>{
   if(userdata.username === usuario&& userdata.password === contraseña){
   navigate("/Home")
-  // setAcceso(true)
+  setAcceso(true)
 };
 };
-// useEffect(()=>{
-//   !acceso&&navigate("/")
-// ,[acceso]})
+useEffect(()=>{
+  !acceso&&navigate("/")
+})
 
  const esRepetida = (id)=>{
   let aux =false;
@@ -58,7 +58,7 @@ const login =(userdata)=>{
   
   return (
     <div className='App'> 
-      {location.pathname !=="/"&&<Nav onSearch={onSearch}/>}    
+      {location.pathname ==="/Home"&&<Nav onSearch={onSearch}/>}    
           
       <Routes>
         <Route path="/" element={<Centrado><Form login={login}/></Centrado>}/>
