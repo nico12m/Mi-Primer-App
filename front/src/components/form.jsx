@@ -3,6 +3,7 @@ import { Formu } from "../Estilos/formulario";
 import { Label } from "../Estilos/Texto";
 import { InputLogin } from "../Estilos/inputs";
 import { Btn1 } from "../Estilos/botones";
+import {Link} from "react-router-dom"
 
 const regexE =/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 function validate (inputs){
@@ -46,6 +47,7 @@ export default function Form(props){
             <Label htmlFor="">Contraseña</Label>
             <InputLogin type="password" value={userdata.password} name="password" onChange={(e)=>handleInputChange(e)} placeholder="Contraseña"/>
             <p>{errors.password}</p>
+            <Link to="Registro">registrate</Link>
             <Btn1 type="submit">Entrar</Btn1>
         </Formu>
     )

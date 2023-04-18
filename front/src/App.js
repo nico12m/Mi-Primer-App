@@ -6,6 +6,7 @@ import About from "./components/About"
 import Detail from "./components/Detail.jsx"
 import Form from './components/form';
 import { Centrado } from './Estilos/centrado';
+import { Registro } from './components/Registro';
 // import characters from "./data"
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import Favorites from './components/Favorites';
@@ -67,6 +68,7 @@ useEffect(()=>{
         <Route path="/About" element={<About/>}/>
         <Route path="/detail/:detailId" element={<Detail/>} />
         <Route path="/favorites" element={<Favorites/>}/>
+        <Route path="/Registro" element={<Registro/>}/>
       </Routes> 
     </div>
   )

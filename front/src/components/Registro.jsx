@@ -1,9 +1,13 @@
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faSignature} from "@fortawesome/free-solid-svg-icons";
+
+
 export const Registro=()=>{
     return(
         <div>
             <h1>Estas en registro</h1>
             <div>
-                <label>Nombre: </label>
+                <label>Nombre: <FontAwesomeIcon icon={faSignature} beat/></label>
                 <input type="text" />
             </div>
             <div>
