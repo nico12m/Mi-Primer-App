@@ -13,7 +13,7 @@ export default function Detail(){
     const [character,setCharacter]=useState({})
     
     useEffect(() => {
-        fetch(`http://localhost:3001/rickandmorty/detail/${detailId}`)
+        fetch(`http://localhost:3001/rickandmorty/characters/detail/${detailId}`)
            .then((response) => response.json())
            .then((char) => {
               if (char.name) {

@@ -4,6 +4,7 @@ require('dotenv').config();
 
 const URL= process.env.API_URL||"https://rickandmortyapi.com/api/character/";
 
+
 const STATUS_OK = 200;
 const STATUS_ERROR =404;
 
