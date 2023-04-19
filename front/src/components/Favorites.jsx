@@ -16,7 +16,6 @@ export default function Favorites (){
 
  return(
     <div>
-        <Texto> <Linke to="/Home">Inicio</Linke> </Texto>
         <div>
             <select onChange={handleOrder}>
                 <option value="Order" disabled="disabled">OrderBy</option>

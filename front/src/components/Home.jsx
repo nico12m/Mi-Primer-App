@@ -1,4 +1,5 @@
 import SearchBar from "./SearchBar";
+import { DivHome } from "../Estilos/Cards_estilo";
 
 export default function Home(){
     const [characters,setCharacters]=useState([]);
@@ -33,8 +34,8 @@ export default function Home(){
     setCharacters(characters.filter((characters)=>characters.id !== ID))
   };
     return( 
-    <div>
+    <DivHome>
         <SearchBar onSearch={onSearch}/>
-    </div>
+    </DivHome>
     )
 }

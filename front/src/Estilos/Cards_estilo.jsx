@@ -2,16 +2,23 @@ import styled from "styled-components";
 
 export const BarraNav = styled.div`
 margin:0;
-padding:2px;
-position:center;
+/* padding:2px; */
+width: 100%;
+/* position:center; */
 background-color:rgba(0, 0, 0, 0.23);
 display:flex;
 flex-direction:center;
 justify-items:center;
-justify-content:right;
+/* justify-content:right; */
 align-items:center;
 text-align:column;
 color:white;
+`
+
+export const DivHome=styled.div`
+    margin:0;
+    width: 100%;
+    height: 100%;
 `
 
 export const Cartas =styled.div`

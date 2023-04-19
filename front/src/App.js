@@ -33,8 +33,8 @@ function App () {
     };
 const location = useLocation();
 
-const usuario = "Nico";
-const contraseña = "123456";
+const usuario = "appdenico@gmail.com";
+const contraseña = "a12345";
 const navigate=useNavigate();
 const [acceso,setAcceso]=useState(false);
 const login =(userdata)=>{
@@ -60,7 +60,7 @@ useEffect(()=>{
   
   return (
     <div className='App'> 
-      {location.pathname ==="/Home"&&<Nav onSearch={onSearch}/>}    
+      {location.pathname !=="/"&&<Nav onSearch={onSearch}/>}    
           
       <Routes>
         <Route path="/" element={<Centrado><Form login={login}/></Centrado>}/>

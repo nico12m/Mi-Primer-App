@@ -16,6 +16,7 @@ font-family: 'Zen Dots', cursive;
 color:black;
 font-size:2em;
 background-color:rgba(240, 248, 255, 0.623);
+position:absolute;
 
 `
 export const Label =styled.label`
@@ -23,4 +24,5 @@ export const Label =styled.label`
 font-family: 'Righteous', cursive;
 font-family: 'Zen Dots', cursive;
 font-size:1.2em;
-padding:1px;`
+padding:1px;
+`

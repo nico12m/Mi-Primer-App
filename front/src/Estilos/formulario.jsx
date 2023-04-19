@@ -16,6 +16,8 @@ background-color:rgba(255, 255, 255, 0.5);
 border:0.5px solid rgba(0, 0, 0, 0.5);
 border-radius:5%;
 max-width:400px;
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+font-family:'Zen Dots', cursive;
 &:hover{
     
     transition:all 3s ease;
