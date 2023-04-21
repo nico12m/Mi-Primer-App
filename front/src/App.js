@@ -1,4 +1,5 @@
 import './App.css';
+import axios from "axios"
 import Nav from './components/Nav';
 import Cards from './components/Cards.jsx';
 import { useEffect, useState } from 'react';
@@ -33,18 +34,22 @@ function App () {
     };
 const location = useLocation();
 
-const usuario = "appdenico@gmail.com";
-const contraseña = "a12345";
+// const usuario = "appdenico@gmail.com";
+// const contraseña = "a12345";
 const navigate=useNavigate();
 const [acceso,setAcceso]=useState(false);
 const login =(userdata)=>{
-  if(userdata.username === usuario&& userdata.password === contraseña){
+  axios.get(`http://localhost:3001/rickandmorty/login?password=${userdata.password}&&email=${userdata.username}`)
+  .then(({data})=>{
+    if(data.access){
+  setAcceso(data.access)
   navigate("/Home")
-  setAcceso(true)
-};
+}else{window.alert("Los datos ingresados no son correctos")}
+  });
+  
 };
 useEffect(()=>{
-  !acceso && navigate("/")
+  !acceso && navigate("/Home")
 },[acceso])
 
  const esRepetida = (id)=>{

@@ -16,7 +16,7 @@ export default function Nav (props){
             <Texto> <Linke to="/">Salir</Linke></Texto>
             <SearchBar onSearch={props.onSearch}/>
       </BarraNav>
-        <img src={logo} alt="" position="relative" />
+        {/* <img src={logo} alt="" position="relative" /> */}
    </div>
          
     );

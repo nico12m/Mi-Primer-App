@@ -19,6 +19,7 @@ export const DivHome=styled.div`
     margin:0;
     width: 100%;
     height: 100%;
+    background-image: image-set();
 `
 
 export const Cartas =styled.div`

@@ -17,8 +17,8 @@ function validate (inputs){
 
 export default function Form(props){
     const [userdata,setUserdata]=useState({
-        username:"",
-        password:""
+        username:"rick",
+        password:"1234"
     });
     const [errors,setErrors] = useState({
         username:"",
